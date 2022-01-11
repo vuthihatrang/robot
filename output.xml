@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on darwin)" generated="20211210 16:28:51.206" rpa="false" schemaversion="2">
+<suite id="s1" name="createDeal" source="/Users/lap00979/PycharmProjects/SellerSuccess/testcases/normalDeal/createDeal.robot">
+<kw name="SC-Login Seller Center" library="loginPO" type="SETUP">
+<arg>hoa.trinh@datamart.vn</arg>
+<arg>data@2018</arg>
+<kw name="Open My Browser" library="openBrowser">
+<arg>https://sellercenter.tiki.vn/new#/</arg>
+<arg>chrome</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211210 16:28:51.724" level="INFO">Opening browser 'chrome' to base url 'https://sellercenter.tiki.vn/new#/'.</msg>
+<status status="PASS" starttime="20211210 16:28:51.723" endtime="20211210 16:29:00.539"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211210 16:29:00.540" endtime="20211210 16:29:01.092"/>
+</kw>
+<status status="PASS" starttime="20211210 16:28:51.710" endtime="20211210 16:29:01.092"/>
+</kw>
+<kw name="Click Login Button SC" library="loginPO">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:01.093" endtime="20211210 16:29:01.164"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:01.166" level="INFO">Clicking button 'xpath://span[text()='Đăng nhập']/parent::button'.</msg>
+<status status="PASS" starttime="20211210 16:29:01.165" endtime="20211210 16:29:01.944"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:01.092" endtime="20211210 16:29:01.944"/>
+</kw>
+<kw name="Switch To Tala Tab" library="loginPO">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${title_tala}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20211210 16:29:01.945" endtime="20211210 16:29:02.035"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:01.945" endtime="20211210 16:29:02.035"/>
+</kw>
+<kw name="Enter Email To Text Box" library="loginPO">
+<arg>${emailAdrress}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211210 16:29:02.036" endtime="20211210 16:29:02.077"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20211210 16:29:02.077" endtime="20211210 16:29:02.138"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailAdrress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:02.140" level="INFO">Typing text 'hoa.trinh@datamart.vn' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20211210 16:29:02.139" endtime="20211210 16:29:02.615"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:02.036" endtime="20211210 16:29:02.616"/>
+</kw>
+<kw name="Enter Password To Text Box" library="loginPO">
+<arg>${password}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211210 16:29:02.617" endtime="20211210 16:29:02.658"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20211210 16:29:02.658" endtime="20211210 16:29:02.710"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:02.710" level="INFO">Typing text 'data@2018' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20211210 16:29:02.710" endtime="20211210 16:29:02.909"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:02.616" endtime="20211210 16:29:02.910"/>
+</kw>
+<kw name="Click Submit Button" library="loginPO">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${btn_submit}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:02.911" endtime="20211210 16:29:02.949"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:02.950" level="INFO">Clicking button 'xpath://div[text()='Đăng nhập']/parent::button'.</msg>
+<status status="PASS" starttime="20211210 16:29:02.950" endtime="20211210 16:29:03.060"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:02.910" endtime="20211210 16:29:03.060"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211210 16:29:13.061" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20211210 16:29:03.060" endtime="20211210 16:29:13.062"/>
+</kw>
+<status status="PASS" starttime="20211210 16:28:51.708" endtime="20211210 16:29:13.062"/>
+</kw>
+<test id="s1-t1" name="Create Deal Is Load Success">
+<kw name="Price Discount: Open Create Normal Deal Page" library="priceDiscountListPO">
+<kw name="MKT: Open Price Discount Listing Page" library="promotionToolPO">
+<kw name="Home: SC-Open Promotion Tools Page" library="homePO">
+<kw name="Home: Close Tour Of Approve Product" library="homePO">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${isElementDisplay}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${btn_closeApproveProduct}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${btn_closeApproveProduct}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211210 16:29:15.125" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211210 16:29:13.238" endtime="20211210 16:29:15.126"/>
+</kw>
+<msg timestamp="20211210 16:29:15.139" level="FAIL">Element with locator 'xpath://span[text()='Xem sản phẩm bị tắt']/following::div/child::button' not found.</msg>
+<status status="FAIL" starttime="20211210 16:29:13.074" endtime="20211210 16:29:15.139"/>
+</kw>
+<msg timestamp="20211210 16:29:15.140" level="INFO">${isElementDisplay} = False</msg>
+<status status="PASS" starttime="20211210 16:29:13.073" endtime="20211210 16:29:15.140"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${isElementDisplay}</arg>
+<arg>click button</arg>
+<arg>${btn_closeApproveProduct}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211210 16:29:15.140" endtime="20211210 16:29:15.142"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:13.072" endtime="20211210 16:29:15.143"/>
+</kw>
+<kw name="Home: Close Tour Of To Do List" library="homePO">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${isElementDisplay}</var>
+<arg>element should be enabled</arg>
+<arg>${icon_closeTourToDoList} 20s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${icon_closeTourToDoList} 20s</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211210 16:29:16.957" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211210 16:29:15.260" endtime="20211210 16:29:16.957"/>
+</kw>
+<msg timestamp="20211210 16:29:16.963" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div/following-sibling::span[@aria-label ='close'] 20s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div/following-sibling::span[@aria-label ='close'] 20s' is not a valid XPath expression.
+  (Session info: chrome=96.0.4664.93)
+</msg>
+<status status="FAIL" starttime="20211210 16:29:15.144" endtime="20211210 16:29:16.963"/>
+</kw>
+<msg timestamp="20211210 16:29:16.964" level="INFO">${isElementDisplay} = False</msg>
+<status status="PASS" starttime="20211210 16:29:15.143" endtime="20211210 16:29:16.964"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${isElementDisplay}</arg>
+<arg>click element</arg>
+<arg>${icon_closeTourToDoList}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211210 16:29:16.964" endtime="20211210 16:29:16.965"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:15.143" endtime="20211210 16:29:16.966"/>
+</kw>
+<kw name="Home: Close Tour Of Maketing center" library="homePO">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${isElementDisplay}</var>
+<arg>element should be enabled</arg>
+<arg>${icon_closeMKTour}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${icon_closeMKTour}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:16.968" endtime="20211210 16:29:17.014"/>
+</kw>
+<msg timestamp="20211210 16:29:17.014" level="INFO">${isElementDisplay} = True</msg>
+<status status="PASS" starttime="20211210 16:29:16.967" endtime="20211210 16:29:17.015"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${isElementDisplay}</arg>
+<arg>click element</arg>
+<arg>${icon_closeMKTour}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${icon_closeMKTour}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:17.017" level="INFO">Clicking element 'xpath://span/following-sibling::span[@aria-label ='close']'.</msg>
+<status status="PASS" starttime="20211210 16:29:17.017" endtime="20211210 16:29:17.228"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:17.015" endtime="20211210 16:29:17.228"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:16.966" endtime="20211210 16:29:17.228"/>
+</kw>
+<kw name="Home: Expand Menu Maketing Center" library="homePO">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${isNotExpand}</var>
+<arg>element should be enabled</arg>
+<arg>${menu_maketingCenter}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${menu_maketingCenter}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:17.233" endtime="20211210 16:29:17.390"/>
+</kw>
+<msg timestamp="20211210 16:29:17.390" level="INFO">${isNotExpand} = True</msg>
+<status status="PASS" starttime="20211210 16:29:17.230" endtime="20211210 16:29:17.390"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${isNotExpand}</arg>
+<arg>click element</arg>
+<arg>${menu_maketingCenter}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menu_maketingCenter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:17.392" level="INFO">Clicking element 'xpath://div[@aria-expanded='false']//span[text()='Trung tâm marketing']'.</msg>
+<status status="PASS" starttime="20211210 16:29:17.391" endtime="20211210 16:29:18.033"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:17.390" endtime="20211210 16:29:18.034"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:17.229" endtime="20211210 16:29:18.034"/>
+</kw>
+<kw name="Home: Open Promotion Tools Page" library="homePO">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_promotion}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211210 16:29:18.036" endtime="20211210 16:29:18.363"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${menu_promotion}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:18.364" level="INFO">Clicking link 'xpath://a[@href='#/marketing-center/promotion-tools']'.</msg>
+<status status="PASS" starttime="20211210 16:29:18.363" endtime="20211210 16:29:19.040"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:18.035" endtime="20211210 16:29:19.040"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:13.071" endtime="20211210 16:29:19.041"/>
+</kw>
+<kw name="MKT: Click Link Price Discount Listing" library="promotionToolPO">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${link_dealList}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211210 16:29:19.042" endtime="20211210 16:29:20.539"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${link_dealList}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:20.540" endtime="20211210 16:29:20.993"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${link_dealList}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:20.994" level="INFO">Clicking link '//a[@href='/new#/marketing-center/deal/list']'.</msg>
+<status status="PASS" starttime="20211210 16:29:20.993" endtime="20211210 16:29:21.313"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:19.041" endtime="20211210 16:29:21.313"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211210 16:29:26.314" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211210 16:29:21.313" endtime="20211210 16:29:26.316"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:13.069" endtime="20211210 16:29:26.317"/>
+</kw>
+<kw name="Price Discount: Close Tour Of Normal Deal" library="priceDiscountListPO">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${btn_closeProTour}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:26.319" endtime="20211210 16:29:26.739"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${ispProTourDisplay}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${btn_closeProTour}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${btn_closeProTour}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211210 16:29:26.780" level="INFO">Element 'xpath://button[@aria-label ='Close']' is displayed.</msg>
+<status status="PASS" starttime="20211210 16:29:26.740" endtime="20211210 16:29:26.781"/>
+</kw>
+<msg timestamp="20211210 16:29:26.781" level="INFO">${ispProTourDisplay} = True</msg>
+<status status="PASS" starttime="20211210 16:29:26.740" endtime="20211210 16:29:26.781"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${ispProTourDisplay}</arg>
+<arg>click element</arg>
+<arg>${btn_closeProTour}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_closeProTour}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:26.784" level="INFO">Clicking element 'xpath://button[@aria-label ='Close']'.</msg>
+<status status="PASS" starttime="20211210 16:29:26.783" endtime="20211210 16:29:26.894"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:26.783" endtime="20211210 16:29:26.895"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:26.318" endtime="20211210 16:29:26.895"/>
+</kw>
+<kw name="Price Discount: Click On Button Create Deal" library="priceDiscountListPO">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_createDeal}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211210 16:29:26.897" endtime="20211210 16:29:26.978"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_createDeal}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:26.981" level="INFO">Clicking button 'xpath://span[text()='Tạo giảm giá'] /parent::button'.</msg>
+<status status="PASS" starttime="20211210 16:29:26.978" endtime="20211210 16:29:27.674"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:26.896" endtime="20211210 16:29:27.675"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:13.068" endtime="20211210 16:29:27.675"/>
+</kw>
+<kw name="Step 1: Is Loaded Create Normal Deal Page" library="createdealPO">
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${titleCreateDeal}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:27.676" endtime="20211210 16:29:29.324"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:27.676" endtime="20211210 16:29:29.324"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211210 16:29:32.327" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211210 16:29:29.325" endtime="20211210 16:29:32.328"/>
+</kw>
+<doc>Verify page create deal is loaded successfully</doc>
+<tag>seller</tag>
+<status status="PASS" starttime="20211210 16:29:13.063" endtime="20211210 16:29:32.329"/>
+</test>
+<test id="s1-t2" name="Search With Product Name">
+<kw name="Step 1: Search By Product Name" library="createdealPO">
+<arg>Ví Nam Đứng Da Bò Thật</arg>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${txt_searchWithProductName}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:32.337" endtime="20211210 16:29:32.410"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${txt_searchWithProductName}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:32.411" level="INFO">Clicking element 'xpath://input[@placeholder='Điền tên sản phẩm']'.</msg>
+<status status="PASS" starttime="20211210 16:29:32.410" endtime="20211210 16:29:32.664"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_searchWithProductName}</arg>
+<arg>${keyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:32.665" level="INFO">Typing text 'Ví Nam Đứng Da Bò Thật' into text field 'xpath://input[@placeholder='Điền tên sản phẩm']'.</msg>
+<status status="PASS" starttime="20211210 16:29:32.665" endtime="20211210 16:29:33.374"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211210 16:29:38.375" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211210 16:29:33.374" endtime="20211210 16:29:38.375"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:32.336" endtime="20211210 16:29:38.376"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211210 16:29:40.379" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211210 16:29:38.376" endtime="20211210 16:29:40.379"/>
+</kw>
+<doc>Verify product add to</doc>
+<tag>seller</tag>
+<status status="PASS" starttime="20211210 16:29:32.334" endtime="20211210 16:29:40.380"/>
+</test>
+<test id="s1-t3" name="Create deal">
+<kw name="Step 1: Click Add All Product" library="createdealPO">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_addAll}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:40.382" level="INFO">Clicking button 'xpath://span[text()='Chọn toàn trang']/parent::button'.</msg>
+<status status="PASS" starttime="20211210 16:29:40.382" endtime="20211210 16:29:40.566"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:40.382" endtime="20211210 16:29:40.567"/>
+</kw>
+<kw name="Step 1: CLick Next To Step2 Button" library="createdealPO">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_nextToStep2}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:40.569" level="INFO">Clicking button 'xpath://span[text()='Tiếp tục']/parent::button'.</msg>
+<status status="PASS" starttime="20211210 16:29:40.568" endtime="20211210 16:29:41.170"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:40.567" endtime="20211210 16:29:41.171"/>
+</kw>
+<kw name="Step 2: Input Price Discount Percent" library="createdealPO">
+<arg>10</arg>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${input_pricePercent}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211210 16:29:41.242" level="INFO">Element 'xpath://input[contains(@id,'discount_price_percent')]' is displayed.</msg>
+<status status="PASS" starttime="20211210 16:29:41.172" endtime="20211210 16:29:41.243"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{elements}</var>
+<arg>${input_pricePercent}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:41.286" level="INFO">@{elements} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="5fdd3ab3-232a-419d-bb5e-2d3bee72035a")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20211210 16:29:41.243" endtime="20211210 16:29:41.286"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="5fdd3ab3-232a-419d-bb5e-2d3bee72035a")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${discountPercent}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:41.287" level="INFO">Typing text '10' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="5fdd3ab3-232a-419d-bb5e-2d3bee72035a")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:41.287" endtime="20211210 16:29:41.785"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:41.286" endtime="20211210 16:29:41.785"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="737ef416-9436-42b7-b299-5dcda9b62d9b")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${discountPercent}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:41.787" level="INFO">Typing text '10' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="737ef416-9436-42b7-b299-5dcda9b62d9b")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:41.786" endtime="20211210 16:29:42.120"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:41.786" endtime="20211210 16:29:42.120"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="cb87d22d-332b-478f-8ce4-cfea7a19c311")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${discountPercent}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:42.121" level="INFO">Typing text '10' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="cb87d22d-332b-478f-8ce4-cfea7a19c311")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:42.120" endtime="20211210 16:29:42.599"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:42.120" endtime="20211210 16:29:42.599"/>
+</iter>
+<status status="PASS" starttime="20211210 16:29:41.286" endtime="20211210 16:29:42.599"/>
+</for>
+<status status="PASS" starttime="20211210 16:29:41.172" endtime="20211210 16:29:42.600"/>
+</kw>
+<kw name="Step 2: Input Special Quantity" library="createdealPO">
+<arg>3</arg>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${input_dealQty}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211210 16:29:42.803" level="INFO">Element 'xpath://input[contains(@id,'deal_quantity')]' is displayed.</msg>
+<status status="PASS" starttime="20211210 16:29:42.601" endtime="20211210 16:29:42.803"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{elements}</var>
+<arg>${input_dealQty}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:42.814" level="INFO">@{elements} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="dfcd02d6-b105-4591-823a-d87c87059bc7")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20211210 16:29:42.804" endtime="20211210 16:29:42.814"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="dfcd02d6-b105-4591-823a-d87c87059bc7")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${quantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:42.816" level="INFO">Typing text '3' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="dfcd02d6-b105-4591-823a-d87c87059bc7")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:42.815" endtime="20211210 16:29:43.006"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:42.815" endtime="20211210 16:29:43.006"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="875a6bc1-2e28-4577-826c-2d8d6672e420")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${quantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:43.008" level="INFO">Typing text '3' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="875a6bc1-2e28-4577-826c-2d8d6672e420")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:43.007" endtime="20211210 16:29:43.364"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:43.006" endtime="20211210 16:29:43.365"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="78381b0e-1352-4761-a343-f2cdf7459be5")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${quantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:43.367" level="INFO">Typing text '3' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="78381b0e-1352-4761-a343-f2cdf7459be5")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:43.366" endtime="20211210 16:29:43.844"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:43.366" endtime="20211210 16:29:43.844"/>
+</iter>
+<status status="PASS" starttime="20211210 16:29:42.814" endtime="20211210 16:29:43.844"/>
+</for>
+<status status="PASS" starttime="20211210 16:29:42.600" endtime="20211210 16:29:43.845"/>
+</kw>
+<kw name="Step 2: Input Limit Quantity" library="createdealPO">
+<arg>1</arg>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${input_limitQty}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211210 16:29:43.928" level="INFO">Element 'xpath://input[contains(@id,'purchase_limit')]' is displayed.</msg>
+<status status="PASS" starttime="20211210 16:29:43.847" endtime="20211210 16:29:43.928"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{elements}</var>
+<arg>${input_limitQty}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:43.957" level="INFO">@{elements} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="109c27a2-a3cc-48d6-9d26-debccba25b4a")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20211210 16:29:43.928" endtime="20211210 16:29:43.957"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="109c27a2-a3cc-48d6-9d26-debccba25b4a")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${limitQuantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:43.958" level="INFO">Typing text '1' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="109c27a2-a3cc-48d6-9d26-debccba25b4a")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:43.958" endtime="20211210 16:29:44.276"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:43.957" endtime="20211210 16:29:44.276"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="09d991cc-ab9b-48c8-b581-ba90213aa94d")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${limitQuantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:44.278" level="INFO">Typing text '1' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="09d991cc-ab9b-48c8-b581-ba90213aa94d")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:44.276" endtime="20211210 16:29:44.745"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:44.276" endtime="20211210 16:29:44.746"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="23140fc1-3fdc-4940-ab29-a55c0b951966")&gt;</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${limitQuantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:44.747" level="INFO">Typing text '1' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="23140fc1-3fdc-4940-ab29-a55c0b951966")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:44.746" endtime="20211210 16:29:45.093"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:44.746" endtime="20211210 16:29:45.093"/>
+</iter>
+<status status="PASS" starttime="20211210 16:29:43.957" endtime="20211210 16:29:45.094"/>
+</for>
+<status status="PASS" starttime="20211210 16:29:43.846" endtime="20211210 16:29:45.094"/>
+</kw>
+<kw name="Step 2: Input Date" library="createdealPO">
+<arg>2021/12/20</arg>
+<arg>2021/12/21</arg>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${input_limitQty}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211210 16:29:45.131" level="INFO">Element 'xpath://input[contains(@id,'purchase_limit')]' is displayed.</msg>
+<status status="PASS" starttime="20211210 16:29:45.096" endtime="20211210 16:29:45.132"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{elementStartDate}</var>
+<arg>${input_timeStart}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:45.170" level="INFO">@{elementStartDate} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="597acce9-896b-4bbd-888f-1e0152ccfce3")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20211210 16:29:45.132" endtime="20211210 16:29:45.170"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{elementEndDate}</var>
+<arg>${input_timeEnd}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:45.190" level="INFO">@{elementEndDate} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="c73fdb95-8462-461a-88d4-ff06a447a82e")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20211210 16:29:45.171" endtime="20211210 16:29:45.191"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${i}</var>
+<arg>1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211210 16:29:45.192" level="INFO">${i} = 1</msg>
+<status status="PASS" starttime="20211210 16:29:45.192" endtime="20211210 16:29:45.192"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{elementStartDate}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="597acce9-896b-4bbd-888f-1e0152ccfce3")&gt;</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:45.193" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="597acce9-896b-4bbd-888f-1e0152ccfce3")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:45.193" endtime="20211210 16:29:45.594"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${value_startTimePicker}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211210 16:29:45.595" endtime="20211210 16:29:45.729"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${value_startTimePicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:45.869" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="d5e1a747-5fb4-416b-8936-783da95580d4")&gt;]</msg>
+<status status="PASS" starttime="20211210 16:29:45.730" endtime="20211210 16:29:45.869"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:45.869" endtime="20211210 16:29:46.393"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:46.395" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="d5e1a747-5fb4-416b-8936-783da95580d4")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:46.394" endtime="20211210 16:29:46.962"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${btn_summitPicker}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:46.962" endtime="20211210 16:29:47.327"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${btn_summitPicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:47.358" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="14120bf5-9d70-41e0-b023-2d484e151271")&gt;]</msg>
+<status status="PASS" starttime="20211210 16:29:47.327" endtime="20211210 16:29:47.358"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:47.359" endtime="20211210 16:29:47.637"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:47.638" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="14120bf5-9d70-41e0-b023-2d484e151271")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:47.637" endtime="20211210 16:29:48.279"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:45.193" endtime="20211210 16:29:48.279"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="d9d3c6d1-8aef-43f2-bfe4-3d0e5cf68b77")&gt;</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:48.281" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="d9d3c6d1-8aef-43f2-bfe4-3d0e5cf68b77")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:48.280" endtime="20211210 16:29:49.275"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${value_startTimePicker}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211210 16:29:49.276" endtime="20211210 16:29:49.564"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${value_startTimePicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:49.934" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="d5e1a747-5fb4-416b-8936-783da95580d4")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:29:49.564" endtime="20211210 16:29:49.934"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:49.935" endtime="20211210 16:29:50.335"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:50.338" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="4b9d929c-fb08-4053-bf68-5acb658b0986")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:50.335" endtime="20211210 16:29:50.926"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${btn_summitPicker}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:50.927" endtime="20211210 16:29:51.195"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${btn_summitPicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:51.226" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="14120bf5-9d70-41e0-b023-2d484e151271")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:29:51.196" endtime="20211210 16:29:51.226"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:51.226" endtime="20211210 16:29:51.551"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:51.552" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="bcc482eb-0c84-457b-b808-30a6b0ad7593")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:51.551" endtime="20211210 16:29:51.781"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:48.280" endtime="20211210 16:29:51.781"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="3dd2478e-b6a5-4e71-abe1-ebd646c92584")&gt;</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:51.782" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="3dd2478e-b6a5-4e71-abe1-ebd646c92584")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:51.781" endtime="20211210 16:29:52.582"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${value_startTimePicker}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211210 16:29:52.582" endtime="20211210 16:29:52.741"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${value_startTimePicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:52.761" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="d5e1a747-5fb4-416b-8936-783da95580d4")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:29:52.741" endtime="20211210 16:29:52.761"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:52.761" endtime="20211210 16:29:53.139"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:53.140" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="edb69485-e4fd-40da-b783-5ee0400b6379")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:53.139" endtime="20211210 16:29:53.418"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${btn_summitPicker}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:53.419" endtime="20211210 16:29:53.529"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${btn_summitPicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:53.569" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="14120bf5-9d70-41e0-b023-2d484e151271")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:29:53.530" endtime="20211210 16:29:53.569"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:53.569" endtime="20211210 16:29:53.860"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:53.861" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="58182094-2a3b-42dc-9a4a-55394556b472")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:53.860" endtime="20211210 16:29:54.102"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:51.781" endtime="20211210 16:29:54.102"/>
+</iter>
+<status status="PASS" starttime="20211210 16:29:45.192" endtime="20211210 16:29:54.102"/>
+</for>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{elementEndDate}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="c73fdb95-8462-461a-88d4-ff06a447a82e")&gt;</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:54.103" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="c73fdb95-8462-461a-88d4-ff06a447a82e")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:54.102" endtime="20211210 16:29:54.924"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${value_endTimePicker}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211210 16:29:54.925" endtime="20211210 16:29:54.994"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${value_endTimePicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:55.164" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="7b8a244b-31fe-44f0-8e66-6eea4414156d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:29:54.995" endtime="20211210 16:29:55.164"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:55.165" endtime="20211210 16:29:55.567"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:55.570" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="86bcda96-af67-4d31-813e-1f3e92221e9d")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:55.568" endtime="20211210 16:29:55.877"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${btn_summitPicker}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:55.879" endtime="20211210 16:29:56.045"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${btn_summitPicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:56.095" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="14120bf5-9d70-41e0-b023-2d484e151271")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:29:56.046" endtime="20211210 16:29:56.095"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:56.096" endtime="20211210 16:29:56.424"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:56.426" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="08bc63e4-cc08-4956-92b8-664ba8e0b2f9")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:56.425" endtime="20211210 16:29:56.842"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:54.102" endtime="20211210 16:29:56.842"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="9cdc6c8d-73c3-4ae1-ad4a-5fef312b3c0a")&gt;</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:56.843" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="9cdc6c8d-73c3-4ae1-ad4a-5fef312b3c0a")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:56.843" endtime="20211210 16:29:57.637"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${value_endTimePicker}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211210 16:29:57.638" endtime="20211210 16:29:57.739"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${value_endTimePicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:57.921" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="7b8a244b-31fe-44f0-8e66-6eea4414156d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:29:57.740" endtime="20211210 16:29:57.921"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:57.921" endtime="20211210 16:29:58.466"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:58.467" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="a18c4e59-0842-4e51-bff8-211bb9c1055d")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:58.466" endtime="20211210 16:29:58.695"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${btn_summitPicker}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:29:58.696" endtime="20211210 16:29:58.821"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${btn_summitPicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:29:58.862" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="14120bf5-9d70-41e0-b023-2d484e151271")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:29:58.821" endtime="20211210 16:29:58.863"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:29:58.863" endtime="20211210 16:29:59.159"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:29:59.160" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="39be65a2-a0a1-40e5-b8f0-54c1c04b7f62")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:29:59.159" endtime="20211210 16:30:00.229"/>
+</kw>
+<status status="PASS" starttime="20211210 16:29:56.842" endtime="20211210 16:30:00.229"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="bce2ec7a-093c-4c24-ab65-373d5d956196")&gt;</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:30:00.232" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="bce2ec7a-093c-4c24-ab65-373d5d956196")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:30:00.231" endtime="20211210 16:30:01.216"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${value_endTimePicker}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211210 16:30:01.216" endtime="20211210 16:30:01.321"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${value_endTimePicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:30:01.371" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="7b8a244b-31fe-44f0-8e66-6eea4414156d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:30:01.321" endtime="20211210 16:30:01.371"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:30:01.372" endtime="20211210 16:30:01.736"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:30:01.737" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="87532602-2229-47ae-abed-900c894b417c")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:30:01.737" endtime="20211210 16:30:02.023"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${btn_summitPicker}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211210 16:30:02.024" endtime="20211210 16:30:02.112"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${valueElement}</var>
+<arg>${btn_summitPicker}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20211210 16:30:02.131" level="INFO">${valueElement} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="14120bf5-9d70-41e0-b023-2d484e151271")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211210 16:30:02.113" endtime="20211210 16:30:02.131"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211210 16:30:02.131" endtime="20211210 16:30:02.427"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${valueElement}[-1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211210 16:30:02.429" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1387643f0cb3c70d20e1fbc5dfa2ea49", element="2825cc23-6158-4786-acf1-b7e0a1bab1e9")&gt;'.</msg>
+<status status="PASS" starttime="20211210 16:30:02.427" endtime="20211210 16:30:02.862"/>
+</kw>
+<status status="PASS" starttime="20211210 16:30:00.230" endtime="20211210 16:30:02.863"/>
+</iter>
+<status status="PASS" starttime="20211210 16:29:54.102" endtime="20211210 16:30:02.863"/>
+</for>
+<status status="PASS" starttime="20211210 16:29:45.094" endtime="20211210 16:30:02.864"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211210 16:30:04.866" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211210 16:30:02.865" endtime="20211210 16:30:04.867"/>
+</kw>
+<kw name="Step 2: Click On Button Submit Deal" library="createdealPO">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_submitDeal}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211210 16:30:04.868" endtime="20211210 16:30:04.892"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_submitDeal}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211210 16:30:04.893" level="INFO">Clicking button 'xpath://span[text()='Kích hoạt']/parent::button'.</msg>
+<status status="PASS" starttime="20211210 16:30:04.892" endtime="20211210 16:30:05.173"/>
+</kw>
+<status status="PASS" starttime="20211210 16:30:04.867" endtime="20211210 16:30:05.174"/>
+</kw>
+<kw name="Step 2: Not Display Error" library="createdealPO">
+<kw name="Element Should Not Be Visible" library="SeleniumLibrary">
+<arg>${popup_error}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<msg timestamp="20211210 16:30:05.247" level="INFO">Element 'xpath://span[text()='Có lỗi xảy ra!']' did not exist.</msg>
+<status status="PASS" starttime="20211210 16:30:05.176" endtime="20211210 16:30:05.247"/>
+</kw>
+<status status="PASS" starttime="20211210 16:30:05.175" endtime="20211210 16:30:05.248"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211210 16:30:07.249" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211210 16:30:05.248" endtime="20211210 16:30:07.250"/>
+</kw>
+<doc>Verify product add to Deal</doc>
+<tag>seller</tag>
+<status status="PASS" starttime="20211210 16:29:40.381" endtime="20211210 16:30:07.250"/>
+</test>
+<kw name="Close My Browser" library="closeBrowser" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211210 16:30:07.257" endtime="20211210 16:30:07.896"/>
+</kw>
+<status status="PASS" starttime="20211210 16:30:07.256" endtime="20211210 16:30:07.897"/>
+</kw>
+<status status="PASS" starttime="20211210 16:28:51.210" endtime="20211210 16:30:07.897"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">seller</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="createDeal">createDeal</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211210 16:28:51.705" level="ERROR">Error in file '/Users/lap00979/PycharmProjects/SellerSuccess/actions/pageObject/normalDeal/priceDiscountListPO.robot' on line 4: Resource file '../../actions/pageObject/promotionToolPO.robot' does not exist.</msg>
+</errors>
+</robot>

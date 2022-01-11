@@ -19,4 +19,11 @@ input_limitQty= "xpath://input[contains(@id,'purchase_limit')]"
 input_timeStart= "xpath://input[contains(@id,'running_period_start')]"
 input_timeEnd= "xpath://input[contains(@id,'running_period_stop')]"
 
+
+value_startTimePicker= "xpath://div[@class='ant-modal-footer']/following-sibling::div[contains(@style,'position')]/descendant::td[@title='2021-12-20']"
+value_endTimePicker= "xpath://div[@class='ant-modal-footer']/following-sibling::div[contains(@style,'position')]/descendant::td[@title='2021-12-21']"
+btn_summitPicker= "xpath://span[text()='Ok']/parent::button"
+
+#btn deleteX= "xpath://span[text()='Xoá']/parent::button"
 btn_submitDeal= "xpath://span[text()='Kích hoạt']/parent::button"
+popup_error= "xpath://span[text()='Có lỗi xảy ra!']"

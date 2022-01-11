@@ -6,7 +6,7 @@ icon_closeTourToDoList="//div/following-sibling::span[@aria-label ='close']"
 
 menu_promotion = "xpath://a[@href='#/marketing-center/promotion-tools']"
 
-menu_maketingCenter = "xpath://div[@aria-expanded='false']//span[text()='Trung tâm marketing']"
+menu_maketingCenter = "xpath://div[@aria-expanded='false']//span[text()='{}']"
 
 
 

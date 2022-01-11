@@ -3,6 +3,7 @@ Library         SeleniumLibrary
 Variables       ../../interfaces/loginSCPageUI.py
 Variables       ../../interfaces/loginTalaPageUI.py
 Resource        ../../actions/common/openBrowser.robot
+Variables       ../../interfaces/homePageUI.py
 
 
 *** Keywords ***
@@ -31,12 +32,13 @@ Click Submit Button
     click button        ${btn_submit}
 
 Switch To SC Tab
+    ${isElementDisplay}=   Run Keyword And Return Status    Element Should Be Visible   ${title_sc}
     switch window  ${title_sc}
 
 SC-Login Seller Center
     [Arguments]     ${emailAdrress}     ${password}
 
-    Open My Browser     https://sandbox-sellercenter.tiki.vn/new#/user/login    chrome
+    Open My Browser     https://sellercenter.tiki.vn/new#/    chrome
 
     Click Login Button SC
 
@@ -45,6 +47,6 @@ SC-Login Seller Center
     Enter Password To Text Box      ${password}
     Click Submit Button
 
-    Switch To SC Tab
-    sleep  10s
-
+    #Switch To SC Tab
+    #wait until page contains element  ${menu_maketingCenter}    timeout=30      seconds     error=none
+    sleep   10s
